@@ -1,5 +1,11 @@
-const Total = ({ exercises1, exercises2, exercises3 }) => {
-  return <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>;
+let a = 0;
+const Total = ({ parts }) => {
+  parts.forEach((element) => {
+    a += element.exercises;
+  });
+  console.log(a);
+
+  return <div>{a}</div>;
 };
 
 export default Total;
