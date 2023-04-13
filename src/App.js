@@ -1,3 +1,4 @@
+import Course from "./Course";
 const App = () => {
   const course = {
     id: 1,
