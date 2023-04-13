@@ -2,8 +2,7 @@ const Content = (pcont) => {
   const pa = pcont.course.parts.map((p) => {
     return (
       <div key={p.id}>
-        {p.name}
-        {p.exercises}
+        {p.name}: {p.exercises}
       </div>
     );
   });

@@ -1,11 +1,13 @@
 import Header from "./Header";
 import Content from "./Content";
+import Total from "./Total";
 
-const Course = ({ course }) => {
+const Course = (p) => {
   return (
     <>
-      <Header course={course} />
-      <Content course={course} />
+      <Header course={p.course} />
+      <Content course={p.course} />
+      <Total course={p.course} />
     </>
   );
 };

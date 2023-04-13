@@ -4,7 +4,7 @@ const Total = ({ course }) => {
     a += element.exercises;
   });
   console.log(a);
-  return <div>Number of exercises {a}</div>;
+  return <div>total of {a} exercises</div>;
 };
 
 export default Total;
