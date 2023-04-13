@@ -1,5 +1,5 @@
-let a = 0;
 const Total = ({ course }) => {
+  let a = 0;
   course.parts.forEach((element) => {
     a += element.exercises;
   });
