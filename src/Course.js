@@ -2,12 +2,19 @@ const Course = ({ courses }) => {
   return (
     <div>
       {courses.map((c, id) => {
+        let a = 0;
         return (
           <div key={id}>
             <h1>{c.name}</h1>
             {c.parts.map((k, i) => {
-              return <p key={i}>ex:{k.exercises}</p>;
+              a += k.exercises;
+              return (
+                <p key={i}>
+                  {k.name}: {k.exercises}
+                </p>
+              );
             })}
+            <p>total:{a}</p>
           </div>
         );
       })}

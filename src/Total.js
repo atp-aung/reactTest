@@ -1,6 +1,6 @@
-const Total = ({ course }) => {
+const Total = ({ courses }) => {
   let a = 0;
-  course.parts.forEach((element) => {
+  courses.parts.forEach((element) => {
     a += element.exercises;
   });
   console.log(a);
